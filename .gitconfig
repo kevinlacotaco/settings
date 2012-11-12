@@ -1,0 +1,21 @@
+[user]
+    name = Kevin Lakotko
+    email = klakotko@gmail.com
+
+[color]
+    ui = auto
+    interactive = auto
+
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
+    hist = log --pretty=format:\"%h %ad | %d %s [%an]\" --graph --date=short
+    unstage = reset HEAD --
+    incoming = "!git remote update -p; git log ..@{u}"
+    outgoing = log @{u}..
+    in = !git incoming
+    out = !git outgoing
